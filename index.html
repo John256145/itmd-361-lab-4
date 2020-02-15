@@ -9,26 +9,22 @@
     <h1>Volunteer Form</h1>
     <h3>My Info</h3>
 
-    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
-      <p><label for="first_name_field">First Name:</label>
-      <input type="text" name="first_name_field"></p>
-      <p><label for="last_name_field">Last Name:</label>
-      <input type="text" name="last_name_field"></p>
-      <p><label for="phone_field">Phone Number:</label>
-      <input type="tel" name="phone_field"></p>
-      <p><label for="email_field">Email Address:</label>
-      <input type="email" name="email_field"></p>
+    <form>
+    <!-- <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST"> -->
 
-      <p>Gender:
-      <input type="radio" name="gender_field" value="male">
-      <label for="male">Male</label>
-      <input type="radio" name="gender_field" value="female">
-      <label for="female">Female</label>
+      <p><label>First Name: <input type = "text" name = "first_name_field"></label></p>
+      <p><label>Last Name: <input type="text" name="last_name_field"></label></p>
+      <p><label>Phone Number: <input type="tel" name="phone_field"></label></p>
+      <p><label>Email Address: <input type="email" name="email_field"></label></p>
+
+      <p><label>Gender:</label>
+      <input type="radio" name="gender_field" value="male"> <label>Male</label>
+      <input type="radio" name="gender_field" value="female"> <label>Female</label>
       </p>
 
       <p>
-      <label for= "age_field">Age: </label>
-      <select id = "age_field">
+      <label>Age: </label>
+      <select name = "age_field">
         <option value="<18">under 18</option>
         <option value="18 - 24">18 - 24</option>
         <option value="25 - 34">25 - 34</option>
@@ -42,24 +38,17 @@
 
       <h3>My Availability</h3>
 
-      <p><label for= "days">Days Available: </label></p>
-      <p><input type="checkbox" name="available_field[]" value="Sunday">
-      <label for="Sunday">Sunday</label></p>
-      <p><input type="checkbox" name="available_field[]" value="Monday">
-      <label for="Monday">Monday</label></p>
-      <p><input type="checkbox"  name="available_field[]" value="Tuesday">
-      <label for="Tuesday">Tuesday</label></p>
-      <p><input type="checkbox"  name="available_field[]" value="Wednesday">
-      <label for="Wednesday">Wednesday</label></p>
-      <p><input type="checkbox"  name="available_field[]" value="Thursday">
-      <label for="Thursday">Thursday</label></p>
-      <p><input type="checkbox"  name="available_field[]" value="Friday">
-      <label for="Friday">Friday</label></p>
-      <p><input type="checkbox"  name="available_field[]" value="Saturday">
-      <label for="Saturday">Saturday</label></p>
+      <p><label>Days Available: </label></p>
+      <p><input type="checkbox" name="available_field[]" value="Sunday"><label>Sunday</label></p>
+      <p><input type="checkbox" name="available_field[]" value="Monday"><label>Monday</label></p>
+      <p><input type="checkbox"  name="available_field[]" value="Tuesday"><label>Tuesday</label></p>
+      <p><input type="checkbox"  name="available_field[]" value="Wednesday"><label>Wednesday</label></p>
+      <p><input type="checkbox"  name="available_field[]" value="Thursday"><label>Thursday</label></p>
+      <p><input type="checkbox"  name="available_field[]" value="Friday"><label>Friday</label></p>
+      <p><input type="checkbox"  name="available_field[]" value="Saturday"><label>Saturday</label></p>
 
-      <p><label for= "comments">Any Comments?</label></p>
-      <p><textarea rows="25" cols="50"></textarea></p>
+      <p><label>Any Comments?</label></p>
+      <p><textarea rows="25" cols="50" placeholder = "Enter any comments you have here..."></textarea></p>
       <input type="hidden" name="hidden_field" value="jgonzalez13">
       <p><input type="submit" value="Send Me"></p>
     </form>
