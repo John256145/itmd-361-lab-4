@@ -9,7 +9,7 @@
     <h1>Volunteer Form</h1>
     <h3>My Info</h3>
 
-    <form>
+    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
       <p><label for="first_name_field">First Name:</label>
       <input type="text" name="first_name_field"></p>
       <p><label for="last_name_field">Last Name:</label>
@@ -43,19 +43,19 @@
       <h3>My Availability</h3>
 
       <p><label for= "days">Days Available: </label></p>
-      <p><input type="checkbox" name="Sunday_f" value="Sunday">
+      <p><input type="checkbox" name="available_field[]" value="Sunday">
       <label for="Sunday">Sunday</label></p>
-      <p><input type="checkbox" name="Monday" value="Monday">
+      <p><input type="checkbox" name="available_field[]" value="Monday">
       <label for="Monday">Monday</label></p>
-      <p><input type="checkbox"  name="Tuesday" value="Tuesday">
+      <p><input type="checkbox"  name="available_field[]" value="Tuesday">
       <label for="Tuesday">Tuesday</label></p>
-      <p><input type="checkbox"  name="Wednesday" value="Wednesday">
+      <p><input type="checkbox"  name="available_field[]" value="Wednesday">
       <label for="Wednesday">Wednesday</label></p>
-      <p><input type="checkbox"  name="Thursday" value="Thursday">
+      <p><input type="checkbox"  name="available_field[]" value="Thursday">
       <label for="Thursday">Thursday</label></p>
-      <p><input type="checkbox"  name="Friday" value="Friday">
+      <p><input type="checkbox"  name="available_field[]" value="Friday">
       <label for="Friday">Friday</label></p>
-      <p><input type="checkbox"  name="Saturday" value="Saturday">
+      <p><input type="checkbox"  name="available_field[]" value="Saturday">
       <label for="Saturday">Saturday</label></p>
 
       <p><label for= "comments">Any Comments?</label></p>
